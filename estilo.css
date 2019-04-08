@@ -1,0 +1,208 @@
+*{
+	margin: 0;
+	padding: 0;  /* Borra todas las mergenes por defecto del navegador y deja el diseño desde 0*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #f47920;
+}
+
+h3 {
+    text-align: center;
+}
+
+.head {
+    display: flex;
+    margin-bottom: 5px;
+    flex-wrap: wrap; /*para que los elementos que no entren se vayan hacia abajo*/
+    justify-content: space-between; /*alinear en el eje horizontal*/
+    align-items: center;
+}
+
+.nombre {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.imglogo {
+    width: 10em;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+/*MENU: ;*/
+
+header, .main, footer{ /* centro un poco el contenido de la pagina de acuerdo al % que quiero que ocupe la pagina*/
+	width: 100%;
+	max-width: 1300px;
+	margin: 20px  auto;
+}
+
+header nav{
+	background: #005883;
+    overflow: hidden; 
+}
+
+header nav ul li{
+	float: left; 
+}
+
+header nav ul{
+	list-style: none; 
+}
+
+header nav ul a{
+	padding: 10px 20px;
+	display: block; 
+	color: #fff;
+	text-decoration: none; 
+}
+
+header nav ul a:hover{
+	background:#75acec;
+}
+
+articles, aside {
+    box-sizing: border-box;
+}
+
+.menu__link--select {
+    background: #f0b429;
+}
+
+
+/*ARTICULOS*/
+
+.main .articles{
+	width: 100%;
+	margin-right: 1.5%;/*creo una margen entre el sidebar y los articulos*/
+	float: left; /*alineo los articulos a la izquierda*/
+    text-align: justify;
+}
+
+.main .articles article{
+	padding: 20px; /*creo una margen interna en los articulos*/
+	background: #fff;
+	margin-bottom: 20px;/*creo un espacio entre los articulos*/
+}
+
+/*SIDEBAR (COLUMNA PARALELA A LOS ARTICLOS)*/
+
+
+.asid, .tw {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;	 /*le cuadro el espacio que se sale del contenedor*/
+}
+.asid {
+	background: #333333;
+	float: left; /*Para que el sidebar se ubique en paralelo con los articulos*/
+}
+
+.list {
+    margin: 10px 0;
+    text-align: center;   
+}
+
+.item {
+    text-align: left;
+    display: inline-block;
+}
+
+.tw {
+	background: #808080;
+	float: right;
+    border-style: double;
+    margin-bottom: 10px;
+}
+
+.imgsid {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+/*PIE DE PAGINA*/
+
+footer{
+	background: #000;
+	color:#fff;
+	clear: both; /*limpia los float y genera como un salto de linea dejandolo en la parte inferior de la pagina*/
+	padding: 10px 0px;
+	text-align: center;
+}
+
+@media screen and (min-width:480px){
+
+    header, footer{ 
+	    width: 90%;
+    }
+    
+    .imglogo {
+        width: 13em;
+    }
+    
+    .n_l {
+        width: 40%;
+    }
+    
+    .n_t{
+        width: 60%;
+    }
+    
+    .asid, .tw {
+        width: 30%;
+    }
+    
+	.main{
+		width: 90%;
+	}
+
+    .imgsid {
+        width: 80%;
+        height: auto;
+        padding: 0 auto;
+    }
+    
+	.main .articles{
+		width: 68.5%;
+	}
+
+	aside{
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (min-width:775px) {
+    
+    .n_l {
+        width: 30%;
+    }
+    
+    .n_t{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
