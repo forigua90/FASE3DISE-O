@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"> <!-- Adapatacion Responsive para todo tipo de pantalla !-->  
+	<title>html5</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	
+	<header> <!--Encabezado-->
+	    <div class="head">
+		    <div class="nombre n_l">
+			    <img class="imglogo" src="IMG/logo_unad.png" alt="Nombre del logo"><!--logotipo de la pagina-->
+		    </div>
+		    <div class="nombre n_t">
+		        <h1 class="title">Estructura basica de html5</h1>
+		    </div>
+		</div>
+		<nav><!--Crear menu-->
+			<div class="container">
+            <span class="icon-menu" id="btnmenu"></span>
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link menu__link">Inicio</a></li>
+                    <li class="menu__item"><a href="html.html" class="menu__link">HTML</a></li>
+                    <li class="menu__item"><a href="css.html" class="menu__link">CSS</a></li>
+                    <li class="menu__item"><a href="estructura.html" class="menu__link">ESTRUCUTRA</a></li>
+                    <li class="menu__item"><a href="multimedia.html" class="menu__link">MULTIMEDIA</a></li>
+                    <li class="menu__item"><a href="autores.html" class="menu__link">AUTORES</a></li>
+            
+                </ul>
+            </div>			
+		</nav>
+	</header>
+
+	<section class="main"><!--Contenedor-->
+		<section class="articles">
+			<article>
+				<h2>Titulo del articulo 1</h2>
+				<p>PONER TEXTO 1</p> 				
+			</article>
+
+			<article>
+				<h2>si quiere Titulo del articulo 2</h2>
+				<p>PONER TEXTO 2</p> 
+			</article>
+		</section>
+		<aside class="asid"><!--Contenido secundario (Barra lateral)-->
+			<h3>Sidebar</h3>
+			<div>
+			    <img class="imgsid" src="IMG/compu.jpg" alt="nombre de la imagen">
+			</div>
+			<div>
+                <div>
+                    <h3>titulos</h3>
+                </div>
+                <div class="list">
+                    <ul class="item">
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                        <li>item 4</li>
+                        <li>item 5</li>
+                    </ul>
+                </div>
+			</div>
+		</aside>
+		<aside class="tw">
+		    <div>
+		        para twitter
+		    </div>
+		</aside>
+	</section>
+	
+	<footer><!--Pie de pagina-->
+		<p>pie de pagina - creando pagina web - 2019</p>
+	</footer>
+</body>
+</html>
