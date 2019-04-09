@@ -1,4 +1,4 @@
-*{
+﻿*{
 	margin: 0;
 	padding: 0;  /* Borra todas las mergenes por defecto del navegador y deja el diseño desde 0*/
     -webkit-box-sizing: border-box;
@@ -201,6 +201,14 @@ footer{
     }
 }
 
+.fondo {        /*fondo toma toda la pantalla*/
+	background-image: url(IMG/fondo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	opacity: 0.9;
+
+}
 
 
 
