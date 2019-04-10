@@ -105,11 +105,11 @@ articles, aside {
 
 .asid, .tw {
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;	 /*le cuadro el espacio que se sale del contenedor*/
 }
 .asid {
-	background: #333333;
+	background: WHITE;
 	float: left; /*Para que el sidebar se ubique en paralelo con los articulos*/
 }
 
