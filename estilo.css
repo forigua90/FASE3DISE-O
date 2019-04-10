@@ -14,7 +14,7 @@ h1, h2, h3, h4 {
     color: #f47920;
 }
 
-h3 {
+h3, h4 {
     text-align: center;
 }
 
@@ -76,7 +76,7 @@ header nav ul a:hover{
 	background:#75acec;
 }
 
-articles, aside {
+article, aside {
     box-sizing: border-box;
 }
 
@@ -87,30 +87,60 @@ articles, aside {
 
 /*ARTICULOS*/
 
-.main .articles{
-	width: 100%;
-	margin-right: 1.5%;/*creo una margen entre el sidebar y los articulos*/
-	float: left; /*alineo los articulos a la izquierda*/
-    text-align: justify;
+.titulo {
+    padding: 10px;
 }
 
 .main .articles article{
-	padding: 20px; /*creo una margen interna en los articulos*/
-	background: #fff;
-	margin-bottom: 20px;/*creo un espacio entre los articulos*/
+	width: 100%;
+	margin-right: 1.5%;/*creo una margen entre el sidebar y los articulos*/
+	/*float: left; /*alineo los articulos a la izquierda*/
+    text-align: justify;
 }
+
+.lectura {
+    width: 100%;
+    text-align: justify;
+}
+
+.texto {
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgtxt {
+    float: right;
+    width: 40%;
+    padding-left: 10px;
+}
+
+
 
 /*SIDEBAR (COLUMNA PARALELA A LOS ARTICLOS)*/
 
+.container {
+    display: flex;
+    flex-wrap: wrap; /*para que los elementos que no entren se vayan hacia abajo*/
+    justify-content: space-between; /*alinear en el eje horizontal*/
+    align-items: center;
+}
 
-.asid, .tw {
+.asid{
+    display:inline-block;
+}
+
+.asid, .side, .tw {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;	 /*le cuadro el espacio que se sale del contenedor*/
 }
+
+.side {
+    float: left;
+}
+
 .asid {
 	background: #333333;
-	float: left; /*Para que el sidebar se ubique en paralelo con los articulos*/
 }
 
 .list {
@@ -165,7 +195,11 @@ footer{
         width: 60%;
     }
     
-    .asid, .tw {
+    .asid {
+        width: 33%;
+    }
+    
+    .tw, .side {
         width: 30%;
     }
     
@@ -179,12 +213,8 @@ footer{
         padding: 0 auto;
     }
     
-	.main .articles{
-		width: 68.5%;
-	}
-
-	aside{
-		width: 100%;
+	.articles{
+		width: 67.5%;
 	}
 
 }
