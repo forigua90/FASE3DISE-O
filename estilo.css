@@ -91,11 +91,14 @@ article, aside {
     padding: 10px;
 }
 
-.main .articles article{
+.main {
 	width: 100%;
-	margin-right: 1.5%;/*creo una margen entre el sidebar y los articulos*/
-	/*float: left; /*alineo los articulos a la izquierda*/
     text-align: justify;
+}
+
+.articles, article{
+	margin-right: 1%;/*creo una margen entre el sidebar y los articulos*/
+	float: left; /*alineo los articulos a la izquierda*/
 }
 
 .lectura {
@@ -125,19 +128,24 @@ article, aside {
     align-items: center;
 }
 
-.asid{
+.conside {
+    width: 100%;
+    float: right;
+    
+}
+
+.asid {
     display:inline-block;
 }
 
 .asid, .side, .tw {
     width: 100%;
-    padding: 10px;
     padding: 30px;
     box-sizing: border-box;	 /*le cuadro el espacio que se sale del contenedor*/
 }
 
 .side {
-    float: left;
+    background: #333333;
 }
 
 .asid {
@@ -157,7 +165,6 @@ article, aside {
 
 .tw {
 	background: #808080;
-	float: right;
     border-style: double;
     margin-bottom: 10px;
 }
@@ -201,9 +208,13 @@ footer{
         width: 33%;
     }
     
-    .tw, .side {
-        width: 30%;
+    .conside {
+        width: 30.5%;
     }
+    
+   /**.tw, .side {
+        width: 30.5%;
+    }*/
     
 	.main{
 		width: 90%;
